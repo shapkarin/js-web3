@@ -24,7 +24,7 @@ Also repo contains [WIP implementation of force-node-version.js](#wip-force-node
 ### GitHub Actions
 Published at https://shapkarin.github.io/jsweb3
 Repo uses GitHub Actions to publish app and docs to the gh-pages.
-Docs sections can be found at `/jsdoc` route.
+Generated JSDoc can be found at https://shapkarin.github.io/jsweb3/jsdoc/
 
 ### App versions
 The first version was made as basic monolit react App 

@@ -1,7 +1,5 @@
-// TODO: uses infira sockets to subscribe for all blocks and deteminate blocks with connected account
 import Web3 from 'web3';
 
-// TODO: pass account from connected wallet
 const CONNECTEC_ACCOUNT = ''
 
 const webSocketProvider = new Web3.providers.WebsocketProvider(process.env.REACT_APP_INFURA_URL_SOCKET);

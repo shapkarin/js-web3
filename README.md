@@ -34,7 +34,7 @@ In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shel
 Also repo contains [WIP implementation of force-node-version.js](#wip-force-node-version.js-implementation)
 
 ### WIP force-node-version implementation
-file `_draft/force-node-version.js`
+file [_draft/force-node-version.js](https://github.com/shapkarin/jsweb3/blob/main/_draft/force-node-version.js)
 It's tries to autmatically install `nvm` in case if developer do not use have Node Version Manager installed
 and then set developer's node version to the same as defeined at `.nvmrc`
 
@@ -61,7 +61,7 @@ Also deployed on https://shapkarin.github.io/jsweb3/jsdoc/
 ### Proposed improvements
 I wonder to get the balance in real time, to update it not based on events from a particular application.
 But better to do that using the server side for better performance.
-JS realtime balance basic example implementation can be found `./_draft/realtimeBalance.js`
+JS realtime balance basic example implementation can be found [./src/_draft/realtimeBalance.js](https://github.com/shapkarin/jsweb3/blob/main/src/_draft/realtimeBalance.js)
 
 - Share states
   - Add [React Providers and Contexts](https://react.dev/reference/react/createContext) to share states

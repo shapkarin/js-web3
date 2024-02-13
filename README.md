@@ -22,16 +22,16 @@ In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shel
 Also repo contains [WIP implementation of force-node-version.js](#wip-force-node-version.js-implementation)
 
 ### GitHub Actions
-Published at https://shapkarin.github.io/jsweb3
 Repo uses GitHub Actions to publish app and docs to the gh-pages.
+Latest version is published at https://shapkarin.github.io/jsweb3
 Generated JSDoc can be found at https://shapkarin.github.io/jsweb3/jsdoc/
 
 ### App versions
 The first version was made as basic monolit react App 
-and can be found at [simple-version branch](https://github.com/shapkarin/jsweb3/tree/simple-version)
-It works well with SnackBar Notification as well
-The latest version is refactored a lot abd decomposied but there is a but with SnackBar Notification (it doesn't shows)
-decopose version commits goes from commit hash 78cb4a785d7dc102ae624ab7986ad1fbfafb13dd
+and can be found at [simple-version branch](https://github.com/shapkarin/jsweb3/tree/simple-version) - that works well with `SnackBar Notification`
+
+The latest version is refactored a lot abd decomposied but there is a bug with SnackBar Notification 
+Yes, notifications are not nessesary for the assigment but it's nice to have.
 
 ### Repo also contains a lot of comments and jsDoc generation
 To generate docs locally run `npm run jsdocs`

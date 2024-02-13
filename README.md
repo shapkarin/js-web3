@@ -56,8 +56,8 @@ Yes, notifications are not nessesary for the assigment but it's nice to have and
 </div>
 
 ### Repo also contains a lot of comments and jsDoc generation
-To generate docs locally run `npm run jsdocs`
-Docs can be found at `./jsdocs` folder.
+To generate docs locally run `npm run jsdoc`
+Docs can be found at `./jsdoc` folder.
 In addition react-styleguidist and storybook can be added 
 Also deployed on https://shapkarin.github.io/jsweb3/jsdoc/
 

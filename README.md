@@ -19,7 +19,7 @@ Build docs
 Most compatable node version to run this app is defined at `package.json` at `engines.node` section
 In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shell Integration](https://github.com/nvm-sh/nvm?tab=readme-ov-file#deeper-shell-integration) is configured.
 
-Also repo contains [WIP implementation of force-node-version.js](wip-force-node-version.js-implementation)
+Also repo contains [WIP implementation of force-node-version.js](#wip-force-node-version.js-implementation)
 
 ### GitHub Actions
 Repo uses GitHub Actions to publish app and docs to the gh-pages.

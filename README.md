@@ -13,6 +13,9 @@ Build
 `npm build`
 `yarn build`
 
+Build docs
+`npm run docs`
+
 Most compatable node version to run this app is defined at `package.json` at `engines.node` section
 In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shell Integration](https://github.com/nvm-sh/nvm?tab=readme-ov-file#deeper-shell-integration) is configured.
 
@@ -20,6 +23,7 @@ Also repo contains [WIP implementation of force-node-version.js](wip-force-node-
 
 ### GitHub Actions
 Repo uses GitHub Actions to publish app and docs to the gh-pages.
+Docs sections can be found at `/jsdoc` route.
 
 ### App versions
 The first version was made as basic monolit react App 

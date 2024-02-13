@@ -25,6 +25,8 @@
  * Note: The ABI must precisely match the smart contract you wish to interact with, as it is 
  * contract-specific. An incorrect or outdated ABI will result in errors when attempting to 
  * communicate with the contract.
+ * 
+ * @see {@link https://web3js.readthedocs.io/en/v1.0/web3-eth.html#getbalance} Web3.js documentation for `getBalance`.
  */
 export const USDT_CONTRACT_ABI = [{
   "constant": true,

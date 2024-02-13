@@ -1,12 +1,17 @@
 ### Run projects
 Install dep
 `npm i`
+or 
+`yarn`
 
 Run the app
 `npm start`
+or
+`yarn start`
 
 Build
 `npm build`
+`yarn build`
 
 Most compatable node version to run this app is defined at `package.json` at `engines.node` section
 In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shell Integration](https://github.com/nvm-sh/nvm?tab=readme-ov-file#deeper-shell-integration) is configured.

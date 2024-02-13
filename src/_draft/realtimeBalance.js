@@ -2,7 +2,7 @@ import Web3 from 'web3';
 
 const CONNECTEC_ACCOUNT = ''
 
-const webSocketProvider = new Web3.providers.WebsocketProvider(process.env.REACT_APP_INFURA_URL_SOCKET);
+const webSocketProvider = new Web3.providers.WebsocketProvider(process.env.REACT_APP_INFURA_SOCKET);
 const web3 = new Web3(webSocketProvider);
 
 const myWalletAddress = CONNECTEC_ACCOUNT.toLowerCase();

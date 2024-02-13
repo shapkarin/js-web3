@@ -11,14 +11,14 @@ function App() {
       {account && (
         <div>
           <Typography variant="h6">Account: {account}</Typography>
-          <Typography variant="h6">ETH Balance: {ethBalance}</Typography>
-          <Typography variant="h6">USDT Balance: {usdtBalance}</Typography>
+          <Typography variant="h6">ETH: {ethBalance}</Typography>
+          <Typography variant="h6">USDT: {usdtBalance}</Typography>
         </div>
       )}
       <SnackbarComponent
         open={snackbar.open}
         message={snackbar.message}
-        severity={snackbar.severity}
+        severity={'success'}
         handleClose={handleCloseSnackbar}
       />
     </Container>

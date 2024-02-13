@@ -31,7 +31,7 @@ function useWallet() {
   * @function connectWallet
   * @returns {Promise<void>} A promise that resolves when the connection attempt has been made.
  */
-  const connectWallet = useCallback(async () => {
+  const connectWallet = async () => {
     if (!web3) {
       showSnackbar("Please install MetaMask to use this feature!", 'warning');
       return;
@@ -49,7 +49,7 @@ function useWallet() {
     } catch (error) {
       showSnackbar("Failed to connect the wallet", 'error');
     }
-  }, [web3, snackbar, showSnackbar]);
+  };
 
 
   useEffect(() => {

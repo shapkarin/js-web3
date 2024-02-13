@@ -32,8 +32,10 @@ decopose version commits goes from commit hash 78cb4a785d7dc102ae624ab7986ad1fbf
 To generate docs locally run `npm run jsdocs`
 Docs can be found at `./jsdocs` folder.
 In addition react-styleguidist and storybook can be added 
+Also deployed on `/jsdoc` route.
 
 ### WIP force-node-version.js implementation
+file `_draft/force-node-version.js`
 It's tries to autmatically install `nvm` in case if developer do not use have Node Version Manager installed
 and then set developer's node version to the same as defeined at `.nvmrc`
 

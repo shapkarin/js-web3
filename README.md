@@ -19,7 +19,7 @@ Build docs
 Most compatable node version to run this app is defined at `package.json` at `engines.node` section
 In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shell Integration](https://github.com/nvm-sh/nvm?tab=readme-ov-file#deeper-shell-integration) is configured.
 
-Also repo contains [WIP implementation of force-node-version.js](wip-force-node-version.js-implementation)
+Also repo contains [WIP implementation of force-node-version.js](#wip-force-node-version.js-implementation)
 
 ### GitHub Actions
 Repo uses GitHub Actions to publish app and docs to the gh-pages.
@@ -27,7 +27,7 @@ Docs sections can be found at `/jsdoc` route.
 
 ### App versions
 The first version was made as basic monolit react App 
-and can be found at first commit hash 2f67e05848bad01e903e77ec94afeef8453f1c81
+and can be found at [simple-version branch](https://github.com/shapkarin/jsweb3/tree/simple-version)
 It works well with SnackBar Notification as well
 The latest version is refactored a lot abd decomposied but there is a but with SnackBar Notification (it doesn't shows)
 decopose version commits goes from commit hash 78cb4a785d7dc102ae624ab7986ad1fbfafb13dd
@@ -43,7 +43,7 @@ file `_draft/force-node-version.js`
 It's tries to autmatically install `nvm` in case if developer do not use have Node Version Manager installed
 and then set developer's node version to the same as defeined at `.nvmrc`
 
-### SUggestion improvements
+### Suggestion improvements
 I wonder to get the balance in real time, to update it not based on events from a particular application.
 But better to do that using the server side for better performance.
 JS realtime balance basic example implementation can be found `./_draft/realtimeBalance.js`

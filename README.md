@@ -1,4 +1,15 @@
-### Run projects
+## Table of Contents  
+- [How to run](#run-project)  
+- [About node versions](#about-node-versions)
+- [WIP force-node-version.js implementation](#wip-force-node-version-implementation)
+- [GitHub Actions](#github-actions)
+- [App versions](app-versions)
+- [jsDoc generation](#repo-also-contains-a-lot-of-comments-and-jsdoc-generation)
+- [Proposed improvements](#proposed-improvements)
+
+---
+
+### Run project
 Install dep
 `npm i`
 or 
@@ -16,10 +27,16 @@ Build
 Build docs
 `npm run docs`
 
+### About node versions
 Most compatable node version to run this app is defined at `package.json` at `engines.node` section
 In addition project uses `.nvmrc` in case if `nvm` is installed and [Deeper Shell Integration](https://github.com/nvm-sh/nvm?tab=readme-ov-file#deeper-shell-integration) is configured.
 
 Also repo contains [WIP implementation of force-node-version.js](#wip-force-node-version.js-implementation)
+
+### WIP force-node-version implementation
+file `_draft/force-node-version.js`
+It's tries to autmatically install `nvm` in case if developer do not use have Node Version Manager installed
+and then set developer's node version to the same as defeined at `.nvmrc`
 
 ### GitHub Actions
 Repo uses GitHub Actions to publish app and docs to the gh-pages.
@@ -35,19 +52,13 @@ Yes, notifications are not nessesary for the assigment but it's nice to have and
 <img width="405" alt="Screenshot 2024-02-14 at 01 21 58" src="https://github.com/shapkarin/jsweb3/assets/1463086/77a8122a-ee3d-4559-b866-0b098b9d91dc">
 <img width="430" alt="Screenshot 2024-02-14 at 01 22 11" src="https://github.com/shapkarin/jsweb3/assets/1463086/ad237dff-8bff-4a80-84cb-e2506603566b">
 
-
 ### Repo also contains a lot of comments and jsDoc generation
 To generate docs locally run `npm run jsdocs`
 Docs can be found at `./jsdocs` folder.
 In addition react-styleguidist and storybook can be added 
-Also deployed on `/jsdoc` route.
+Also deployed on https://shapkarin.github.io/jsweb3/jsdoc/
 
-### WIP force-node-version.js implementation
-file `_draft/force-node-version.js`
-It's tries to autmatically install `nvm` in case if developer do not use have Node Version Manager installed
-and then set developer's node version to the same as defeined at `.nvmrc`
-
-### Suggestion improvements
+### Proposed improvements
 I wonder to get the balance in real time, to update it not based on events from a particular application.
 But better to do that using the server side for better performance.
 JS realtime balance basic example implementation can be found `./_draft/realtimeBalance.js`

@@ -3,7 +3,7 @@
 - [About node versions](#about-node-versions)
 - [WIP force-node-version.js implementation](#wip-force-node-version-implementation)
 - [GitHub Actions](#github-actions)
-- [App versions](app-versions)
+- [App versions](#app-versions)
 - [jsDoc generation](#repo-also-contains-a-lot-of-comments-and-jsdoc-generation)
 - [Proposed improvements](#proposed-improvements)
 

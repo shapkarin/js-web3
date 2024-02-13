@@ -21,7 +21,7 @@ jobs:
       - name: Install and Build
         run: |
           yarn
-          yarn build
+          yarn build-gh-pages
           cp -r jsdoc build
           
       - name: Deploy 🚀

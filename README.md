@@ -52,6 +52,9 @@ I wonder to get the balance in real time, to update it not based on events from 
 But better to do that using the server side for better performance.
 JS realtime balance basic example implementation can be found `./_draft/realtimeBalance.js`
 
+- Share states
+  - Add [React Providers and Contexts](https://react.dev/reference/react/createContext) to share states
+  - or use state managment, for example [Redux](https://redux.js.org/) + [Redux-Toolkit](https://redux-toolkit.js.org/)
 - Server Side (on Go - I'm primarily attracted to its performance) 
 - 100% protection against circumvention of Infura Restrict Project ID (API Key) Key Permissions which uses Access-Control-Allow-Origin to protect against exploitation of my infura key.
 - Also in the future the server can be used for benefits offered by Project Secret (API Secret or Private Key).

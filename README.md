@@ -49,10 +49,11 @@ and can be found at [simple-version branch](https://github.com/shapkarin/jsweb3/
 
 The latest version is refactored a lot abd decomposied but there is a bug with SnackBar Notification 
 Yes, notifications are not nessesary for the assigment but it's nice to have and it works well at `simple-version branch`
-<p float="left">
+
+<div style="display: flex; flex-direction: row;">
   <img width="405" alt="Screenshot 2024-02-14 at 01 21 58" src="https://github.com/shapkarin/jsweb3/assets/1463086/77a8122a-ee3d-4559-b866-0b098b9d91dc">
   <img width="430" alt="Screenshot 2024-02-14 at 01 22 11" src="https://github.com/shapkarin/jsweb3/assets/1463086/ad237dff-8bff-4a80-84cb-e2506603566b">
-</p>
+</div>
 
 ### Repo also contains a lot of comments and jsDoc generation
 To generate docs locally run `npm run jsdocs`

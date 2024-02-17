@@ -70,6 +70,7 @@ JS realtime balance basic example implementation can be found [./src/_draft/real
   - Add [React Providers and Contexts](https://react.dev/reference/react/createContext) to share states
   - or use state managment, for example [Redux](https://redux.js.org/) + [Redux-Toolkit](https://redux-toolkit.js.org/)
 - React app optimizations
+- Add [synpress](https://github.com/Synthetixio/synpress) e2e tests (web3 compatible cypress)
 - Server Side (on Go - I'm primarily attracted to its performance) 
 - 100% protection against circumvention of Infura Restrict Project ID (API Key) Key Permissions which uses Access-Control-Allow-Origin to protect against exploitation of my infura key.
 - Also in the future the server can be used for benefits offered by Project Secret (API Secret or Private Key).

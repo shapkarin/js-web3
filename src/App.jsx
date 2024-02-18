@@ -22,7 +22,13 @@ function App() {
         handleClose={handleCloseSnackbar}
       />
       <Divider sx={{ mt: 5, mb: 5 }} />
-      <Button variant="contained" href="/jsdoc">JSDoc</Button>
+      <Button
+        variant="contained"
+        // the explicit path is slightly better than the relative path that's why I use condition
+        href={process.env.NODE_ENV === "production" ? "/jsweb3/jsdoc" : "/jsdoc"}
+      >
+        JSDoc
+      </Button>
     </Container>
   );
 }

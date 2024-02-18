@@ -72,6 +72,7 @@ JS realtime balance basic example implementation can be found [./src/_draft/real
 - Server Side (on Go - I'm primarily attracted to its performance) 
 - 100% protection against circumvention of Infura Restrict Project ID (API Key) Key Permissions which uses Access-Control-Allow-Origin to protect against exploitation of my infura key.
 - Also in the future the server can be used for benefits offered by Project Secret (API Secret or Private Key).
+- It's a good idea to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to keep commits atomic.
 
 Advantages of using the server side, as well as realtime balance:
 - Even though it is possible to simply request the balance on the client, with each interaction with the dApp we create, there is a problem with a large number of different dApps used by the user at the same time or sending tokens directly from the wallet, it is more useful to know the balance not based on interactions with a particular dApp. 

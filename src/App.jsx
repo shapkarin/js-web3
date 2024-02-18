@@ -1,4 +1,4 @@
-import { Container, Button, Typography } from '@mui/material';
+import { Container, Button, Typography, Divider } from '@mui/material';
 import SnackbarComponent from './Components/SnackbarComponent';
 import useWallet from './Hooks/useWallet';
 
@@ -21,6 +21,8 @@ function App() {
         severity={'success'}
         handleClose={handleCloseSnackbar}
       />
+      <Divider sx={{ mt: 5, mb: 5 }} />
+      <Button variant="contained" href="/jsdoc">JSDoc</Button>
     </Container>
   );
 }

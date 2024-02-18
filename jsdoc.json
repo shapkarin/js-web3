@@ -12,7 +12,7 @@
   },
   "opts": {
     "encoding": "utf8",
-    "destination": "jsdoc/",
+    "destination": "./public/jsdoc/",
     "recurse": true,
     "verbose": true
   },

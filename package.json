@@ -20,7 +20,7 @@
     "node": ">=20.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run jsdoc && react-scripts start",
     "build": "react-scripts build && npm run jsdoc",
     "build-gh-pages": "PUBLIC_URL=/jsweb3/ react-scripts build && npm run jsdoc",
     "test": "react-scripts test",

@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # ignore jsdoc build folder
-/jsdoc
+public/jsdoc

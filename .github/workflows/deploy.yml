@@ -22,7 +22,7 @@ jobs:
         run: |
           yarn
           yarn build-gh-pages
-          cp -r jsdoc build
+          cp -r public/jsdoc build
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0

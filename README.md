@@ -58,9 +58,9 @@ Yes, notifications are not nessesary for the assigment but it's nice to have and
 
 ### Repo also contains a lot of comments and jsDoc generation
 To generate docs locally run `npm run jsdoc`
-Docs can be found at `./jsdoc` folder.
-In addition react-styleguidist and storybook can be added 
-Also deployed on https://shapkarin.github.io/jsweb3/jsdoc/
+Docs can be found at http://localhost:3000/jsdoc/ route locally
+or at GitHub Pages https://shapkarin.github.io/jsweb3/jsdoc/
+In addition `storybook`, `react-styleguidist` can be added.
 
 ### Proposed improvements
 I wonder to get the balance in real time, to update it not based on events from a particular application.

@@ -20,7 +20,7 @@ jobs:
       
       - name: Install and Build
         run: |
-          yarn
+          yarn --frozen-lockfile
           yarn build-gh-pages
           cp -r public/jsdoc build
           

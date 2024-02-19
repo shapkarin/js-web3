@@ -104,32 +104,28 @@
 
 
 <div class="description">
-    CONTRACT_ABI is essential for interacting with Ethereum smart contracts from the client-side
-using the Web3.js library. It stands for Application Binary Interface and acts as a bridge 
-between your JavaScript application and the smart contract on the Ethereum blockchain.
-
-The ABI is a JSON array that details the contract's functions, including their names, input 
+    <p>CONTRACT_ABI is essential for interacting with Ethereum smart contracts from the client-side
+using the Web3.js library. It stands for Application Binary Interface and acts as a bridge
+between your JavaScript application and the smart contract on the Ethereum blockchain.</p>
+<p>The ABI is a JSON array that details the contract's functions, including their names, input
 parameters, output types, and event signatures. This information allows Web3.js to correctly
-format calls to the contract's functions and parse their outputs. Essentially, the ABI tells 
-Web3.js how to encode function calls into the low-level data formats that the Ethereum network 
-understands, and how to decode data returned from the blockchain back into JavaScript types.
-
-How to Use:
-To interact with a smart contract from your web application, you first need the contract's ABI 
-and its deployed address. With these, you can create an instance of the contract in your 
-application, enabling you to call its methods or listen for events it emits.
-
-Example:
-const myContractInstance = new web3.eth.Contract(CONTRACT_ABI, contractAddress);
-
-With `myContractInstance`, you can now interact with the smart contract: calling its read-only 
+format calls to the contract's functions and parse their outputs. Essentially, the ABI tells
+Web3.js how to encode function calls into the low-level data formats that the Ethereum network
+understands, and how to decode data returned from the blockchain back into JavaScript types.</p>
+<h3>How to Use:</h3>
+<p>To interact with a smart contract from your web application, you first need the contract's ABI
+and its deployed address. With these, you can create an instance of the contract in your
+application, enabling you to call its methods or listen for events it emits.</p>
+<h3>Example:</h3>
+<pre class="prettyprint source lang-js"><code>const myContractInstance = new web3.eth.Contract(CONTRACT_ABI, contractAddress);
+</code></pre>
+<p>With <code>myContractInstance</code>, you can now interact with the smart contract: calling its read-only
 methods, executing transactions that alter its state, or subscribing to events. This interaction
-happens directly from the user's browser, providing a seamless integration between your web 
-application and the Ethereum blockchain.
-
-Note: The ABI must precisely match the smart contract you wish to interact with, as it is 
-contract-specific. An incorrect or outdated ABI will result in errors when attempting to 
-communicate with the contract.
+happens directly from the user's browser, providing a seamless integration between your web
+application and the Ethereum blockchain.</p>
+<p>Note: The ABI must precisely match the smart contract you wish to interact with, as it is
+contract-specific. An incorrect or outdated ABI will result in errors when attempting to
+communicate with the contract.</p>
 </div>
 
 
@@ -177,7 +173,7 @@ communicate with the contract.
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
         <ul>
-            <li><a href="https://web3js.readthedocs.io/en/v1.0/web3-eth.html#getbalance">https://web3js.readthedocs.io/en/v1.0/web3-eth.html#getbalance</a> Web3.js documentation for `getBalance`.</li>
+            <li><a href="https://docs.web3js.org/api/web3-eth/function/getBalance/">https://docs.web3js.org/api/web3-eth/function/getBalance/</a> Web3.js documentation for `getBalance`.</li>
         </ul>
     </dd>
     
@@ -210,7 +206,7 @@ communicate with the contract.
 
 
 <div class="description">
-    Displays a Snackbar component from Material-UI with an Alert inside. This component is used to show feedback messages to users.
+    <p>Displays a Snackbar component from Material-UI with an Alert inside. This component is used to show feedback messages to users.</p>
 </div>
 
 
@@ -262,7 +258,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The component props.
+            <td class="description last"><p>The component props.</p>
                 <h6>Properties</h6>
                 
 
@@ -304,7 +300,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">Controls the visibility of the snackbar. If true, the snackbar is shown.</td>
+            <td class="description last"><p>Controls the visibility of the snackbar. If true, the snackbar is shown.</p></td>
         </tr>
 
     
@@ -327,7 +323,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The message to display inside the alert component of the snackbar.</td>
+            <td class="description last"><p>The message to display inside the alert component of the snackbar.</p></td>
         </tr>
 
     
@@ -359,7 +355,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The severity of the alert. This defines the color and icon used.</td>
+            <td class="description last"><p>The severity of the alert. This defines the color and icon used.</p></td>
         </tr>
 
     
@@ -382,7 +378,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The function to call when the snackbar needs to be closed. It's triggered on timeout or if the user dismisses the alert.</td>
+            <td class="description last"><p>The function to call when the snackbar needs to be closed. It's triggered on timeout or if the user dismisses the alert.</p></td>
         </tr>
 
     
@@ -483,12 +479,11 @@ communicate with the contract.
 
 
 <div class="description">
-    Attempts to connect to the user's Ethereum wallet using MetaMask. This function triggers MetaMask's account access request,
-then fetches and sets the user's first account if successful. Displays appropriate feedback via Snackbar based on the outcome.
-
-Utilizes `window.ethereum.request` to request access to the user's Ethereum accounts. If access is granted, it then uses
-`web3.eth.getAccounts` to fetch the list of accounts associated with the user's wallet. The first account in the array is considered
-the user's primary account and is stored for further use.
+    <p>Attempts to connect to the user's Ethereum wallet using MetaMask. This function triggers MetaMask's account access request,
+then fetches and sets the user's first account if successful. Displays appropriate feedback via Snackbar based on the outcome.</p>
+<p>Utilizes <code>window.ethereum.request</code> to request access to the user's Ethereum accounts. If access is granted, it then uses
+<code>web3.eth.getAccounts</code> to fetch the list of accounts associated with the user's wallet. The first account in the array is considered
+the user's primary account and is stored for further use.</p>
 </div>
 
 
@@ -544,7 +539,7 @@ the user's primary account and is stored for further use.
         <ul>
             <li><a href="https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts">https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts</a> for MetaMask's `eth_requestAccounts` method.</li>
         
-            <li><a href="https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html#getaccounts">https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html#getaccounts</a> for Web3.js `getAccounts` method documentation.</li>
+            <li><a href="https://docs.web3js.org/libdocs/Web3Eth#getaccounts">https://docs.web3js.org/libdocs/Web3Eth#getaccounts</a> for Web3.js `getAccounts` method documentation.</li>
         
             <li>EIP-1193 for the Ethereum provider JavaScript API <a href="https://eips.ethereum.org/EIPS/eip-1193">https://eips.ethereum.org/EIPS/eip-1193</a>.
 
@@ -574,7 +569,7 @@ This function should be wrapped in `useCallback` to ensure it does not change be
 
         
 <div class="param-desc">
-    A promise that resolves when the connection attempt has been made.
+    <p>A promise that resolves when the connection attempt has been made.</p>
 </div>
 
 
@@ -611,11 +606,10 @@ This function should be wrapped in `useCallback` to ensure it does not change be
 
 
 <div class="description">
-    A custom React hook for managing Snackbar state.
-
-This hook initializes with a default state for a Snackbar component, providing functions to show and close the Snackbar.
-The `showSnackbar` function allows you to specify the message and severity for the Snackbar,
-while `handleCloseSnackbar` can be used to hide it.
+    <p>A custom React hook for managing Snackbar state.</p>
+<p>This hook initializes with a default state for a Snackbar component, providing functions to show and close the Snackbar.
+The <code>showSnackbar</code> function allows you to specify the message and severity for the Snackbar,
+while <code>handleCloseSnackbar</code> can be used to hide it.</p>
 </div>
 
 
@@ -667,7 +661,7 @@ while `handleCloseSnackbar` can be used to hide it.
 
             
 
-            <td class="description last">The initial state of the Snackbar, with default values if none are provided.
+            <td class="description last"><p>The initial state of the Snackbar, with default values if none are provided.</p>
                 <h6>Properties</h6>
                 
 
@@ -709,7 +703,7 @@ while `handleCloseSnackbar` can be used to hide it.
 
             
 
-            <td class="description last">Initial visibility state of the Snackbar.</td>
+            <td class="description last"><p>Initial visibility state of the Snackbar.</p></td>
         </tr>
 
     
@@ -732,7 +726,7 @@ while `handleCloseSnackbar` can be used to hide it.
 
             
 
-            <td class="description last">Initial message to be displayed in the Snackbar.</td>
+            <td class="description last"><p>Initial message to be displayed in the Snackbar.</p></td>
         </tr>
 
     
@@ -764,7 +758,7 @@ while `handleCloseSnackbar` can be used to hide it.
 
             
 
-            <td class="description last">Initial severity type of the Snackbar.</td>
+            <td class="description last"><p>Initial severity type of the Snackbar.</p></td>
         </tr>
 
     
@@ -841,7 +835,7 @@ while `handleCloseSnackbar` can be used to hide it.
 <ul>
         <li>
 <div class="param-desc">
-    An object containing the Snackbar state, and functions to show and close the Snackbar.
+    <p>An object containing the Snackbar state, and functions to show and close the Snackbar.</p>
 </div>
 
 
@@ -861,7 +855,7 @@ while `handleCloseSnackbar` can be used to hide it.
     
         <li>
 <div class="param-desc">
-    return.snackbar - The current state of the Snackbar.
+    <p>return.snackbar - The current state of the Snackbar.</p>
 </div>
 
 
@@ -881,7 +875,7 @@ while `handleCloseSnackbar` can be used to hide it.
     
         <li>
 <div class="param-desc">
-    return.showSnackbar - Function to display the Snackbar with a specific message and severity.
+    <p>return.showSnackbar - Function to display the Snackbar with a specific message and severity.</p>
 </div>
 
 
@@ -901,7 +895,7 @@ while `handleCloseSnackbar` can be used to hide it.
     
         <li>
 <div class="param-desc">
-    return.handleCloseSnackbar - Function to close the Snackbar.
+    <p>return.handleCloseSnackbar - Function to close the Snackbar.</p>
 </div>
 
 
@@ -938,32 +932,27 @@ while `handleCloseSnackbar` can be used to hide it.
 
 
 <div class="description">
-    Custom hook to fetch and display the balance of a specific ERC-20 token for a given account.
-This hook listens for changes in the `web3` instance, `account`, `tokenContractAddress`, or `tokenContractABI`,
-and updates the token balance accordingly.
-
-Utilizes the `web3.eth.Contract` method to create a contract instance with the provided ABI and address,
-then calls the `balanceOf` function of the contract to get the account's token balance. The balance
-is then converted from Wei to a more readable format (e.g., Mwei for tokens like USDT).
-
-ABI is essential for interacting with Ethereum smart contracts from the client-side
-using the Web3.js library. It stands for Application Binary Interface and acts as a bridge 
-between your JavaScript application and the smart contract on the Ethereum blockchain.
-
-The ABI is a JSON array that details the contract's functions, including their names, input 
+    <p>Custom hook to fetch and display the balance of a specific ERC-20 token for a given account.
+This hook listens for changes in the <code>web3</code> instance, <code>account</code>, <code>tokenContractAddress</code>, or <code>tokenContractABI</code>,
+and updates the token balance accordingly.</p>
+<p>Utilizes the <code>web3.eth.Contract</code> method to create a contract instance with the provided ABI and address,
+then calls the <code>balanceOf</code> function of the contract to get the account's token balance. The balance
+is then converted from Wei to a more readable format (e.g., Mwei for tokens like USDT).</p>
+<p>ABI is essential for interacting with Ethereum smart contracts from the client-side
+using the Web3.js library. It stands for Application Binary Interface and acts as a bridge
+between your JavaScript application and the smart contract on the Ethereum blockchain.</p>
+<p>The ABI is a JSON array that details the contract's functions, including their names, input
 parameters, output types, and event signatures. This information allows Web3.js to correctly
-format calls to the contract's functions and parse their outputs. Essentially, the ABI tells 
-Web3.js how to encode function calls into the low-level data formats that the Ethereum network 
-understands, and how to decode data returned from the blockchain back into JavaScript types.
-
-With `myContractInstance`, you can now interact with the smart contract: calling its read-only 
+format calls to the contract's functions and parse their outputs. Essentially, the ABI tells
+Web3.js how to encode function calls into the low-level data formats that the Ethereum network
+understands, and how to decode data returned from the blockchain back into JavaScript types.</p>
+<p>With <code>myContractInstance</code>, you can now interact with the smart contract: calling its read-only
 methods, executing transactions that alter its state, or subscribing to events. This interaction
-happens directly from the user's browser, providing a seamless integration between your web 
-application and the Ethereum blockchain.
-
-Note: The ABI must precisely match the smart contract you wish to interact with, as it is 
-contract-specific. An incorrect or outdated ABI will result in errors when attempting to 
-communicate with the contract.
+happens directly from the user's browser, providing a seamless integration between your web
+application and the Ethereum blockchain.</p>
+<p>Note: The ABI must precisely match the smart contract you wish to interact with, as it is
+contract-specific. An incorrect or outdated ABI will result in errors when attempting to
+communicate with the contract.</p>
 </div>
 
 
@@ -1015,7 +1004,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The Web3 instance used for blockchain interactions.</td>
+            <td class="description last"><p>The Web3 instance used for blockchain interactions.</p></td>
         </tr>
 
     
@@ -1038,7 +1027,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The Ethereum account address to fetch the token balance for.</td>
+            <td class="description last"><p>The Ethereum account address to fetch the token balance for.</p></td>
         </tr>
 
     
@@ -1061,7 +1050,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The contract address of the ERC-20 token.</td>
+            <td class="description last"><p>The contract address of the ERC-20 token.</p></td>
         </tr>
 
     
@@ -1084,7 +1073,7 @@ communicate with the contract.
 
             
 
-            <td class="description last">The ABI of the ERC-20 token contract, necessary for interacting with the contract.</td>
+            <td class="description last"><p>The ABI of the ERC-20 token contract, necessary for interacting with the contract.</p></td>
         </tr>
 
     
@@ -1135,9 +1124,9 @@ communicate with the contract.
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
         <ul>
-            <li><a href="https://web3js.readthedocs.io/en/v1.0/web3-eth-contract.html">https://web3js.readthedocs.io/en/v1.0/web3-eth-contract.html</a> for more on `web3.eth.Contract`.</li>
+            <li><a href="https://docs.web3js.org/api/web3-eth-contract/class/Contract/">https://docs.web3js.org/api/web3-eth-contract/class/Contract/</a> for more on `web3.eth.Contract`.</li>
         
-            <li><a href="https://web3js.readthedocs.io/en/v1.0/web3-utils.html#fromwei">https://web3js.readthedocs.io/en/v1.0/web3-utils.html#fromwei</a> for conversion utility functions like `fromWei`.</li>
+            <li><a href="https://docs.web3js.org/api/web3-utils/function/fromWei/">https://docs.web3js.org/api/web3-utils/function/fromWei/</a> for conversion utility functions like `fromWei`.</li>
         </ul>
     </dd>
     
@@ -1163,7 +1152,7 @@ communicate with the contract.
 
         
 <div class="param-desc">
-    The token balance of the specified account, adjusted for token decimals.
+    <p>The token balance of the specified account, adjusted for token decimals.</p>
 </div>
 
 
@@ -1200,9 +1189,9 @@ communicate with the contract.
 
 
 <div class="description">
-    A custom React hook that initializes and provides a Web3 instance.
+    <p>A custom React hook that initializes and provides a Web3 instance.
 This hook checks if the Ethereum object is available in the window (injected by Ethereum wallets like MetaMask)
-and then creates a Web3 instance using it. This instance can be used to interact with the Ethereum blockchain.
+and then creates a Web3 instance using it. This instance can be used to interact with the Ethereum blockchain.</p>
 </div>
 
 
@@ -1256,7 +1245,7 @@ and then creates a Web3 instance using it. This instance can be used to interact
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
         <ul>
-            <li><a href="https://web3js.readthedocs.io/">https://web3js.readthedocs.io/</a> for the Web3.js documentation.</li>
+            <li><a href="https://docs.web3js.org/">https://docs.web3js.org/</a> for the Web3.js documentation.</li>
         </ul>
     </dd>
     
@@ -1282,7 +1271,7 @@ and then creates a Web3 instance using it. This instance can be used to interact
 
         
 <div class="param-desc">
-    The Web3 instance if the Ethereum object is available, otherwise `null`.
+    <p>The Web3 instance if the Ethereum object is available, otherwise <code>null</code>.</p>
 </div>
 
 
@@ -1330,7 +1319,7 @@ and then creates a Web3 instance using it. This instance can be used to interact
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Feb 19 2024 02:21:34 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Feb 19 2024 02:59:40 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>

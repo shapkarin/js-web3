@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/jsweb3/static/js/main.3d5072f4.js",
+    "main.js": "/jsweb3/static/js/main.83fe4192.js",
     "index.html": "/jsweb3/index.html",
-    "main.3d5072f4.js.map": "/jsweb3/static/js/main.3d5072f4.js.map"
+    "main.83fe4192.js.map": "/jsweb3/static/js/main.83fe4192.js.map"
   },
   "entrypoints": [
-    "static/js/main.3d5072f4.js"
+    "static/js/main.83fe4192.js"
   ]
 }

@@ -68,10 +68,12 @@ But better to do that using the server side for better performance.
 JS realtime balance basic example implementation can be found [./src/_draft/realtimeBalance.js](https://github.com/shapkarin/jsweb3/blob/main/src/_draft/realtimeBalance.js)
 
 - [Provider Events Listening](https://docs.web3js.org/guides/web3_providers_guide/events_listening/) (better XU)
+
 - Share states
   - Add [React Providers and Contexts](https://react.dev/reference/react/createContext) to share states
   - or use state managment, for example [Redux](https://redux.js.org/) + [Redux-Toolkit](https://redux-toolkit.js.org/)
 - React app optimizations
+- React Error Boundaries, for example can be combined with sentry
 - Add lint
 - Add [synpress](https://github.com/Synthetixio/synpress) e2e tests (web3 compatible cypress)
 - Server Side (on Go - I'm primarily attracted to its performance) 

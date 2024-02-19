@@ -10,8 +10,8 @@
  * @param {string} account - The Ethereum account address whose balance is to be fetched.
  * @returns {string} The current ETH balance of the specified account, in Ether units.
  * 
- * @see {@link https://web3js.readthedocs.io/en/v1.0/web3-eth.html#getbalance} Web3.js documentation for `getBalance`.
- * @see {@link https://web3js.readthedocs.io/en/v1.0/web3-utils.html#fromwei} Web3.js documentation for `fromWei` utility function.
+ * @see {@link https://docs.web3js.org/api/web3-eth/function/getBalance/} Web3.js documentation for `getBalance`.
+ * @see {@link https://docs.web3js.org/api/web3-utils/function/fromWei/} Web3.js documentation for `fromWei` utility function.
  * 
  */
 import { useState, useEffect } from 'react';

@@ -34,8 +34,8 @@ import { useState, useEffect } from 'react';
  * @param {Object[]} tokenContractABI - The ABI of the ERC-20 token contract, necessary for interacting with the contract.
  * @returns {string} The token balance of the specified account, adjusted for token decimals.
  * 
- * @see {@link https://web3js.readthedocs.io/en/v1.0/web3-eth-contract.html} for more on `web3.eth.Contract`.
- * @see {@link https://web3js.readthedocs.io/en/v1.0/web3-utils.html#fromwei} for conversion utility functions like `fromWei`.
+ * @see {@link https://docs.web3js.org/api/web3-eth-contract/class/Contract/} for more on `web3.eth.Contract`.
+ * @see {@link https://docs.web3js.org/api/web3-utils/function/fromWei/} for conversion utility functions like `fromWei`.
  * 
  */
 function useTokenBalance(web3, account, tokenContractAddress, tokenContractABI) {

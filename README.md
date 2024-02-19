@@ -39,7 +39,8 @@ It's tries to autmatically install `nvm` in case if developer do not use have No
 and then set developer's node version to the same as defeined at `.nvmrc`
 
 ### GitHub Actions
-Repo uses GitHub Actions to publish app and docs to the gh-pages.
+Repo uses [GitHub Actions](https://github.com/shapkarin/jsweb3/blob/main/.github/workflows/deploy.yml) to publish app and docs to the gh-pages.
+To match dependencies it uses yarn.lock file and yarn --frozen-lockfile.
 Latest version is published at https://shapkarin.github.io/jsweb3
 Generated JSDoc can be found at https://shapkarin.github.io/jsweb3/jsdoc/
 
@@ -66,6 +67,7 @@ I wonder to get the balance in real time, to update it not based on events from 
 But better to do that using the server side for better performance.
 JS realtime balance basic example implementation can be found [./src/_draft/realtimeBalance.js](https://github.com/shapkarin/jsweb3/blob/main/src/_draft/realtimeBalance.js)
 
+- [Provider Events Listening](https://docs.web3js.org/guides/web3_providers_guide/events_listening/) (better XU)
 - Share states
   - Add [React Providers and Contexts](https://react.dev/reference/react/createContext) to share states
   - or use state managment, for example [Redux](https://redux.js.org/) + [Redux-Toolkit](https://redux-toolkit.js.org/)
@@ -76,6 +78,7 @@ JS realtime balance basic example implementation can be found [./src/_draft/real
 - 100% protection against circumvention of Infura Restrict Project ID (API Key) Key Permissions which uses Access-Control-Allow-Origin to protect against exploitation of my infura key.
 - Also in the future the server can be used for benefits offered by Project Secret (API Secret or Private Key).
 - It's a good idea to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to keep commits atomic.
+- JSDoc uses [markdown-it-anchor](https://github.com/jsdoc/jsdoc/issues?q=is%3Aissue+markdown+anchor) but it does not create anchors for `"readme": "./README.md",` only renders it as basic Markdown.
 
 Advantages of using the server side, as well as realtime balance:
 - Even though it is possible to simply request the balance on the client, with each interaction with the dApp we create, there is a problem with a large number of different dApps used by the user at the same time or sending tokens directly from the wallet, it is more useful to know the balance not based on interactions with a particular dApp. 

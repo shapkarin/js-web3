@@ -8,7 +8,7 @@ import Web3 from 'web3';
  * 
  * @returns {Web3|null} The Web3 instance if the Ethereum object is available, otherwise `null`.
  * 
- * @see {@link https://web3js.readthedocs.io/} for the Web3.js documentation.
+ * @see {@link https://docs.web3js.org/} for the Web3.js documentation.
  */
 function useWeb3() {
   const [web3, setWeb3] = useState(null);

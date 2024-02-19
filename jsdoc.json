@@ -5,7 +5,8 @@
     "excludePattern": "(^|\\/|\\\\)_"
   },
   "plugins": [
-    "node_modules/jsdoc-babel"
+    "node_modules/jsdoc-babel",
+    "plugins/markdown"
   ],
   "babel": {
     "presets": ["@babel/preset-react"]
@@ -13,6 +14,7 @@
   "opts": {
     "encoding": "utf8",
     "destination": "./public/jsdoc/",
+    "readme": "./README.md",
     "recurse": true,
     "verbose": true
   },
